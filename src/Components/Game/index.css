@@ -1,0 +1,37 @@
+.hidden {
+    display: none;
+}
+
+.score {
+    width: 300px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    background: rgb(43, 49, 65);
+    top: 0;
+}
+
+.playerName {
+    width: 1536px;
+    height: 63px;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 40px;
+    padding-top: 5px;
+    color: white;
+    font-weight: 900;
+    background: rgb(43, 49, 65);
+}
+
+.redScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 1536px;
+    height: 870px;
+    background: url(../../img/deathScreen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

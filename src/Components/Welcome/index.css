@@ -1,0 +1,183 @@
+.welcome {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.coub {
+    width: 700px;
+    height: 700px;
+    background: #3F4D69;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcomeLogo {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 1% 0 2% 0;
+    color: white;
+    font-weight: 900;
+    background: rgb(40, 50, 68);
+}
+
+.yourName {
+    width: 40%;
+    height: 15%; 
+    padding: 1% 0 1% 0;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background: rgb(40, 50, 68);
+}
+
+#nameInput {
+    height: 20%;
+    width: 43%;
+    outline: none;
+    background: rgb(81, 91, 122);
+    color: rgb(40, 50, 68);
+    border: none;
+    padding: 4%;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+#nameInput:hover {
+    transition: all ease 1s;
+    background: white;
+}
+
+.chooseHero {
+    width: 70%;
+    height: 32%;
+    background: rgb(40, 50, 68); 
+    font-size: 30px;
+    color: white;
+    padding: 2% 0% 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heroes {
+    width: 90%;
+    height: 60%;
+    display: flex;
+}
+
+.hero {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > img {
+    pointer-events: none;
+    width: 80%;
+    height: 80%;
+}
+
+.hero:hover {
+    transition: all ease .3s;
+    background: white;
+}
+
+.heroChosen {
+    background: white;
+}
+
+#gameStart {
+    font-size: 30px;
+    width: 30%;
+    height: 10%;
+    background: rgb(40, 50, 68);
+    border: none;
+    outline: none;
+}
+
+#gameStart:hover {
+    transition: all ease .5s;
+    background: white;
+}
+
+.authorSign {
+    margin-bottom: 2%;
+    width: 45%;
+    font-size: 15px;
+    height: 6%;
+    display: flex;
+    color: #cecece;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.authorSign > a {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.authorSign > a > img {
+    width: 100%;
+}
+
+
+@media only screen and (max-width:800px) {
+    .coub {
+        width: 500px;
+        height: 500px;
+    }
+
+    .welcomeLogo {
+        font-size: 30px;
+    }
+
+    .chooseHero,  #gameStart{
+        font-size: 20px;
+    }
+
+    .yourName {
+        font-size: 15px;
+    }
+
+    .authorSign {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .coub {
+        width: 300px;
+        height: 300px;
+    }
+
+    .welcomeLogo {
+        font-size: 20px;
+    }
+
+    .chooseHero,  #gameStart{
+        font-size: 10px;
+    }
+
+    .yourName {
+        font-size: 10px;
+    }
+
+    .authorSign {
+        font-size: 7px;
+    }
+}
