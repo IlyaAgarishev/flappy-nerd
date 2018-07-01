@@ -1,6 +1,7 @@
 Flappy Nerd
 ========================
-Flappy Nerd is a game inspired by flappy bird. Pipes embody coming exams. Enjoy.
+
+Flappy Nerd is a game inspired by flappy bird. Pipes embody coming exams http://flappynerd.surge.sh/
 
 ![gif](https://i.imgur.com/Ag8yTL0.gif)
 ![gif](https://i.imgur.com/FNbz5aB.gif)
