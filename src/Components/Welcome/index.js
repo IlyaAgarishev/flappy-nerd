@@ -1,14 +1,14 @@
-import React from 'react';
-import './index.css';
-import Game from '../Game';
-import colors from '../Colors/index.js';
-import ilya from '../../img/ilya.svg';
-import opex from '../../img/opex.svg';
-import immo from '../../img/immo.svg';
-import welcomeSong from '../../audio/welcomeSong.mp3';
-import fb from '../../img/fb.svg';
-import git from '../../img/git.svg';
-import inst from '../../img/inst.svg';
+import React from "react";
+import "./index.css";
+import Game from "../Game";
+import colors from "../colors.js";
+import ilya from "../../img/ilya.svg";
+import opex from "../../img/opex.svg";
+import immo from "../../img/immo.svg";
+import welcomeSong from "../../audio/welcomeSong.mp3";
+import fb from "../../img/fb.svg";
+import git from "../../img/git.svg";
+import inst from "../../img/inst.svg";
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -16,14 +16,14 @@ class Welcome extends React.Component {
 
     this.state = {
       submitted: false,
-      colors: 'white',
-      playerName: '',
+      colors: "white",
+      playerName: "",
       heroId: 0
     };
 
     this.welcomeSong = new Audio(welcomeSong);
 
-    this.heroClass = document.getElementsByClassName('hero');
+    this.heroClass = document.getElementsByClassName("hero");
   }
 
   colorChange = () => {
@@ -34,26 +34,26 @@ class Welcome extends React.Component {
     e.preventDefault();
     this.setState({ submitted: !this.state.submitted });
 
-    if (this.nameInput.value == '') {
-      this.setState({ playerName: 'player' });
+    if (this.nameInput.value == "") {
+      this.setState({ playerName: "player" });
     } else {
       this.setState({ playerName: this.nameInput.value });
     }
   };
 
   changeBackground = () => {
-    this.nameInput.style.background = 'white';
+    this.nameInput.style.background = "white";
   };
 
   hideHeroes = () => {
     for (let i = 0; i < this.heroClass.length; i++) {
-      this.heroClass[i].classList.remove('heroChosen');
+      this.heroClass[i].classList.remove("heroChosen");
     }
   };
 
   heroChosen = i => {
     this.hideHeroes();
-    this.heroClass[i].classList.add('heroChosen');
+    this.heroClass[i].classList.add("heroChosen");
     this.setState({ heroId: i });
   };
 
